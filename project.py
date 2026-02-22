@@ -21,7 +21,7 @@ Most Active Date: {most_active_day} with Total Minutes: {most_minutes:.2f}
 
 
 #convertion json file into python object list of dictionaries.
-def function_1():
+def load_data():
     with open("data_history.json") as file:
       data=json.load(file)
       return data
@@ -42,7 +42,7 @@ def cleaning(data):
 
 
 #favourite artist + track θελω να εμφανισω και τα top 5 tracks +times listen
-def function_2(new_data):
+def calculate_stats(new_data):
     tracks={}
     artists={}
     overall_time=0
@@ -88,7 +88,7 @@ def function_2(new_data):
     return fav_tr,times_listen_tr,total_minutes_tr,fav_ar,times_listen_ar,overall_time
 
 #Most active hours
-def function_3(new_data):
+def peak_day(new_data):
     my_dates={}
     for data in new_data:
         minutes=data["minutes"]
@@ -109,7 +109,7 @@ def function_3(new_data):
     return music_surge,max_minutes
 
 #Diagram through pandas library
-def function_4(my_dates):
+def visualize_activity(my_dates):
     x=[]
     y=[]
     for key,value in my_dates.items():
