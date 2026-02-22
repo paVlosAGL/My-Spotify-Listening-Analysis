@@ -45,11 +45,11 @@ The project consistes of the following files:
 #### Explanation of Functions
 The program is divided into multiple functions for clarity and modularity.
 
-- `function_1()`: Loads the JSON file and converts it into a Python object.
+- `load_data()`: Loads the JSON file and converts it into a Python object.
 - `cleaning()`: Extracts only the necessary fields(date,minutes played,track,artist) and returns cleaned data.
-- `function_2()`: Calculates favorite track, favorite artist, total listening time and top tracks.
-- `function_3()`: Groups listening minutes by date and identifies the most active listening day.
-- `function_4()`: Generates a visualization showing listening activity over time.
+- `calculate_stats()`: Calculates favorite track, favorite artist, total listening time and top tracks.
+- `peak_day()`: Groups listening minutes by date and identifies the most active listening day.
+- `visualize_activity()`: Generates a visualization showing listening activity over time.
 
 Each function performs a single task, which makes the code easier to test and maintain
 
