@@ -6,14 +6,14 @@
 
 #### Introduction
 This project is my final submission for **CS50 Introduction to Programming With Python**.
-The idea for this project came from my personal interest in music as well as data manipulation. Spotify provides its users with an annual summary called *Spotify Wrapped*. So i wanted to built a simplified version of this concept, using my own library history and understand how the company may uses programming languages, such as Python, in order to fulfill this task.
+The idea for this project came from my personal interest in music as well as data manipulation. Spotify provides its users with an annual summary called *Spotify Wrapped*. Therefore, i wanted to build a simplified version of this concept, using my own listening history to understand how the company may use programming languages, such as Python, in order to perform this task.
 
 The main goal of this project is to analyze raw Spotify streaming data and extract meaningful statistics, using Python, while applying the programming concepts taught throughout the CS50 course.
 
 ---
 
 #### Project Overview
-The program processes Spotify streaming history data exported in Jason format.
+The program processes Spotify streaming history data exported in JSON format.
 After cleaning and transforming the raw data, the program calculates several statistics, including:
 
 - Total Listening Time (in minutes),
@@ -27,13 +27,13 @@ Lastly, it visualizes listening activity over time using a line plot.
 ---
 
 #### Data Source
-The inputed data comes from Spotify's personal data export features.
-The raw file contains information such as timestamps, track names, artists, milliseconds played. Since this data is not directly usable, it must be cleaned and converted into a more convinient structure before analysis.
+The input data comes from Spotify's personal data export features.
+The raw file contains information such as timestamps, track names, artists, milliseconds played. Since this data is not directly usable, it must be cleaned and converted into a more convenient structure before analysis.
 
 ---
 
 #### Program Structure
-The project's file consistes of the following files:
+The project consistes of the following files:
 
 - `project.py`: This is the main Python script which contains all program logic.
 - `test_project.py`: It contains the tests for the main functions.
